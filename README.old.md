@@ -1,2 +1,0 @@
-# portifolio
-Meu portifólio profissional
