@@ -1,3 +1,3 @@
-# Portifolio
+# Meu Portifólio
 
-Meu portifólio profissional
+Projeto de meu portifólio feito em ReactJS
