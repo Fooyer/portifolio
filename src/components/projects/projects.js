@@ -4,6 +4,7 @@ import './projects.css';
 
 // Import Frameworks
 
+import { useRef, useEffect, useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -23,7 +24,7 @@ const items = [
 const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 3,
       slidesToSlide: 1,
     },
     tablet: {
@@ -40,14 +41,40 @@ const responsive = {
 
 function Projects() {
 
+  const titleRef = useRef(null);
+
+  const [showTitle, setShowTitle] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const { top } = titleRef.current.getBoundingClientRect();
+      if (top < window.innerHeight) {
+        setShowTitle(true);
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
+
+    <>
+    
+    <h1 ref={titleRef} className={showTitle ? 'title title-show' : 'title'}>
+      Título da animação
+    </h1>
+    
     <div className="Projects">
 
-      <Carousel responsive={responsive}>
+      <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={2500} transitionDuration={500} infinite={true} pauseOnHover={true} partialVisible={true} className="custom-carousel">
 
       {items.map(item => (
         
-        <div key={item.id}>
+        <div key={item.id} id="ProjectsCarousel">
 
             <h3>{item.name}</h3>
 
@@ -58,6 +85,7 @@ function Projects() {
     </Carousel>
       
     </div>
+    </>
   );
 }
 
