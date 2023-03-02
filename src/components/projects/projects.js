@@ -72,17 +72,17 @@ function Projects() {
 
       <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={2500} transitionDuration={500} infinite={true} pauseOnHover={true} partialVisible={true} className="custom-carousel">
 
-      {items.map(item => (
-        
-        <div key={item.id} id="ProjectsCarousel">
+        {items.map(item => (
+          
+          <div key={item.id} id="ProjectsCarousel">
 
-            <h3>{item.name}</h3>
+              <h3>{item.name}</h3>
 
-        </div>
-        
-      ))}
+          </div>
+          
+        ))}
 
-    </Carousel>
+      </Carousel>
       
     </div>
     </>
