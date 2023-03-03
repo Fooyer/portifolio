@@ -62,30 +62,31 @@ function Projects() {
 
   return (
 
-    <>
+    <div className="projectsAllComponent" >
     
-    <h1 ref={titleRef} className={showTitle ? 'title title-show' : 'title'}>
-      Título da animação
-    </h1>
-    
-    <div className="Projects">
-
-      <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={2500} transitionDuration={500} infinite={true} pauseOnHover={true} partialVisible={true} className="custom-carousel">
-
-        {items.map(item => (
-          
-          <div key={item.id} id="ProjectsCarousel">
-
-              <h3>{item.name}</h3>
-
-          </div>
-          
-        ))}
-
-      </Carousel>
+      <h1 ref={titleRef} className={showTitle ? 'title title-show' : 'title'}>
+        Projetos
+      </h1>
       
+      <div className="Projects">
+
+        <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={2500} transitionDuration={500} infinite={true} pauseOnHover={true} partialVisible={true} className="custom-carousel">
+
+          {items.map(item => (
+            
+            <div key={item.id} id="ProjectsCarousel">
+
+                <h3>{item.name}</h3>
+
+            </div>
+            
+          ))}
+
+        </Carousel>
+        
+      </div>
+
     </div>
-    </>
   );
 }
 
