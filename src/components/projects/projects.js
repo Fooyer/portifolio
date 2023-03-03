@@ -64,9 +64,11 @@ function Projects() {
 
     <div className="projectsAllComponent" >
     
-      <h1 ref={titleRef} className={showTitle ? 'title title-show' : 'title'}>
+    <div className={showTitle ? 'title title-show' : 'title'}>
+      <h1 ref={titleRef}>
         Projetos
       </h1>
+    </div>
       
       <div className="Projects">
 
