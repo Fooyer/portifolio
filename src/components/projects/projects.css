@@ -1,7 +1,7 @@
 .Projects{
-    margin-top: 15vh;
+    margin-top: 8vh;
     height: auto;
-    background-color: rgb(141, 141, 141) !important;
+    background-color: blue !important;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -20,12 +20,14 @@
     user-select: none;
 }
 .custom-carousel{
-    background: rgb(141, 141, 141) !important;
+    background: blue !important;
     width: 70%;
 }
 
 .title {
-    margin-top: 200vh;
+    color: white;
+    margin-top: 150vh;
+    text-decoration: double;
     transition: transform 0.5s ease-in-out;
     transform: translateX(-100%);
     height: auto;
@@ -33,4 +35,7 @@
   
 .title-show {
     transform: translateX(-30%);
+}
+.projectsAllComponent{
+    background-color: rgb(46, 46, 46);
 }
