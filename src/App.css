@@ -1,3 +1,14 @@
 .App {
   text-align: center;
+  background-color: rgb(53, 53, 53);
+}
+#mainRow{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  margin-top: 15vh;
+  background-color: rgb(53, 53, 53);
+  margin-bottom: 15vh;
 }

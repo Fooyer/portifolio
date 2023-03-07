@@ -20,7 +20,7 @@ function Card({id,name,cor,link}) {
 
     return (
 
-        <a href={link} className="divProjectsClick" target="_blank" >
+        <a href={link} className="divProjectsClick" target="_blank" rel="noreferrer" >
             <div key={id} id="ProjectsCarousel" ref={div1Ref} >
 
                 <h3>{name}</h3>
