@@ -15,7 +15,7 @@ function Description() {
     return (
         <>
 
-            <Col xs="11" md="8" lg="6" className='mainDescription' >
+            <Col xs="16" md="10" lg="6" className='mainDescription' >
                 
                 <p>Testando</p>
 

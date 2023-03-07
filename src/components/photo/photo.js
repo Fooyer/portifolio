@@ -15,7 +15,7 @@ function Photo() {
     return (
     <>
 
-        <Col xs="9" md="6" lg="4" className='mainPhoto' >
+        <Col xs="16" md="10" lg="4" className='mainPhoto' >
             
             <p>Testando</p>
 
