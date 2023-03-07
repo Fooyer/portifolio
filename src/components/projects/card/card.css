@@ -1,0 +1,18 @@
+#ProjectsCarousel{
+    height: 30vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    user-select: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divProjectsClick{
+    text-decoration: none;
+}

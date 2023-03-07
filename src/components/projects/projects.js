@@ -8,17 +8,17 @@ import { useRef, useEffect, useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
+// Component Imports
+
+import Card from './card/card';
+
 // Component Code
 
 const items = [
-    { id: 1, name: 'Item 1'},
-    { id: 2, name: 'Item 2'},
-    { id: 3, name: 'Item 3'},
-    { id: 4, name: 'Item 4'},
-    { id: 5, name: 'Item 5'},
-    { id: 6, name: 'Item 6'},
-    { id: 7, name: 'Item 7'},
-    { id: 8, name: 'Item 8'},
+    { id: 1, name: 'Fight Drop', cor: 'red', link:"https://www.fight-drop.online/"},
+    { id: 2, name: 'Mustica Blog', cor: '#173fc4', link:"/"},
+    { id: 3, name: 'CRUD System', cor: '#49a0bd', link:"http://webclientsystem.great-site.net/"},
+    { id: 4, name: 'HUB Functions', cor: 'gray', link:"https://hubfunctions.vercel.app/"},
   ];
   
 const responsive = {
@@ -76,11 +76,7 @@ function Projects() {
 
           {items.map(item => (
             
-            <div key={item.id} id="ProjectsCarousel">
-
-                <h3>{item.name}</h3>
-
-            </div>
+            <Card id={item.id} name={item.name} cor={item.cor} link={item.link} />
             
           ))}
 

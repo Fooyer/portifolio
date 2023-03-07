@@ -9,18 +9,6 @@
     justify-content: center;
     align-items: center;
 }
-
-#ProjectsCarousel{
-    height: 30vh;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0px 0px 5px black;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    user-select: none;
-}
 .custom-carousel{
     background: rgb(2, 2, 2) !important;
     width: 70%;
